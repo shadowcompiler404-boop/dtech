@@ -3,21 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mafunzo — DTECH</title>
-<meta name="description" content="Mafunzo ya teknolojia, ulehemu, CCTV, graphics design, programming, networking na zaidi — DTECH Tanzania.">
+<title>Mafunzo — DTECH College</title>
+<meta name="description" content="Mafunzo ya teknolojia, ulehemu, CCTV, graphics design, programming, networking, AI na zaidi — DTECH College Tanzania.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Mafunzo — DTECH College">
+<meta property="og:description" content="Kozi mbalimbali za vitendo zinazokuandaa kwa soko la ajira na ujasiriamali wa kisasa.">
+<meta property="og:type" content="website">
+
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap & Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Custom CSS -->
 <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
 
+<!-- ============ NAVBAR ============ -->
 <nav class="navbar navbar-expand-lg fixed-top dtech-nav" id="mainNav">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><span class="brand-logo"><i class="bi bi-cpu"></i></span><span class="brand-text">DTECH COLLEGE</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+    <a class="navbar-brand" href="index.html">
+      <span class="brand-logo"><i class="bi bi-cpu"></i></span>
+      <span class="brand-text">DTECH COLLEGE</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Fungua menyu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
         <li class="nav-item"><a class="nav-link" href="index.html">Mwanzo</a></li>
@@ -26,161 +43,534 @@
         <li class="nav-item"><a class="nav-link" href="huduma.html">Huduma</a></li>
         <li class="nav-item"><a class="nav-link" href="miradi.html">Miradi</a></li>
         <li class="nav-item"><a class="nav-link" href="maswali.html">Maswali</a></li>
-        <li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a class="btn btn-gradient btn-sm px-3" href="wasiliana.html">Wasiliana Nasi</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a class="btn btn-gradient btn-sm px-3" href="wasiliana.html">Wasiliana Nasi</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
+<!-- ============ PAGE HEADER ============ -->
 <header class="page-header">
   <div class="container">
     <span class="eyebrow">Mafunzo</span>
     <h1>Mafunzo <span class="gradient-text">Tunayotoa</span></h1>
-    <p>Kozi mbalimbali za vitendo zinazokuandaa kwa soko la ajira na ujasiriamali wa kisasa.</p>
+    <p>Kozi mbalimbali za vitendo zinazokuandaa kwa soko la ajira na ujasiriamali wa kisasa. Chagua kundi ili kuona kozi zinazopatikana.</p>
   </div>
 </header>
 
+<!-- ============ COURSES WITH FILTERS ============ -->
 <section class="section-sm">
   <div class="container">
-    <!-- Filters -->
+
+    <!-- Filter buttons -->
     <div class="filter-bar reveal">
       <button class="filter-btn active" data-filter="all">Zote</button>
       <button class="filter-btn" data-filter="it">IT & Kompyuta</button>
       <button class="filter-btn" data-filter="web">Web & Programming</button>
-      <button class="filter-btn" data-filter="creative">Ubunifu</button>
+      <button class="filter-btn" data-filter="creative">Ubunifu & Digital</button>
       <button class="filter-btn" data-filter="technical">Ufundi</button>
       <button class="filter-btn" data-filter="security">Usalama</button>
     </div>
 
-    <div class="row g-4" id="coursesGrid">
-      <!-- 1 -->
+    <!-- ============ GRID ============ -->
+    <div class="row g-4">
+
+      <!-- ============================================
+           KUNDI 1: IT & KOMPYUTA
+           ============================================ -->
+
+      <!-- IT 1 -->
       <div class="col-md-6 col-lg-4 reveal" data-category="it">
         <div class="glass-card">
           <div class="card-icon"><i class="bi bi-pc-display"></i></div>
           <h3 class="card-title">Teknolojia ya Kompyuta</h3>
-          <p class="card-text">Misingi ya kompyuta, Windows, Microsoft Office, na ujuzi wa kidijitali.</p>
-          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Teknolojia%20ya%20Kompyuta." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm"><i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo</a>
+          <p class="card-text">Misingi ya kompyuta, Windows, Microsoft Office na ujuzi wa kidijitali.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Teknolojia%20ya%20Kompyuta." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
         </div>
       </div>
-      <!-- 2 -->
-      <div class="col-md-6 col-lg-4 reveal" data-category="technical">
-        <div class="glass-card">
-          <div class="card-icon"><i class="bi bi-fire"></i></div>
-          <h3 class="card-title">Ulehemu (Welding)</h3>
-          <p class="card-text">Ujuzi wa kulehemu kwa vitendo — kutoka misingi hadi ufundi wa hali ya juu.</p>
-          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Ulehemu%20(Welding)." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm"><i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo</a>
-        </div>
-      </div>
-      <!-- 3 -->
-      <div class="col-md-6 col-lg-4 reveal" data-category="security">
-        <div class="glass-card">
-          <div class="card-icon"><i class="bi bi-camera-video"></i></div>
-          <h3 class="card-title">Usakinishaji wa CCTV Camera</h3>
-          <p class="card-text">Kusakinisha, kusanidi, na kudumisha mifumo ya CCTV kwa nyumba na biashara.</p>
-          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Usakinishaji%20wa%20CCTV." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm"><i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo</a>
-        </div>
-      </div>
-      <!-- 4 -->
-      <div class="col-md-6 col-lg-4 reveal" data-category="creative">
-        <div class="glass-card">
-          <div class="card-icon"><i class="bi bi-palette"></i></div>
-          <h3 class="card-title">Graphics Design</h3>
-          <p class="card-text">Ubunifu wa logo, mabango, vipeperushi na maudhui ya kuvutia kwa biashara.</p>
-          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Graphics%20Design." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm"><i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo</a>
-        </div>
-      </div>
-      <!-- 5 -->
+
+      <!-- IT 2 -->
       <div class="col-md-6 col-lg-4 reveal" data-category="it">
         <div class="glass-card">
           <div class="card-icon"><i class="bi bi-file-earmark-text"></i></div>
           <h3 class="card-title">Computer Application</h3>
           <p class="card-text">Matumizi ya Microsoft Word, Excel, PowerPoint na zana nyingine za ofisi.</p>
-          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Computer%20Application." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm"><i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo</a>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Computer%20Application." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
         </div>
       </div>
-      <!-- 6 -->
-      <div class="col-md-6 col-lg-4 reveal" data-category="web">
-        <div class="glass-card">
-          <div class="card-icon"><i class="bi bi-code-slash"></i></div>
-          <h3 class="card-title">Utengenezaji wa Website</h3>
-          <p class="card-text">Kujenga website za kisasa kwa HTML, CSS, JavaScript na Bootstrap.</p>
-          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Utengenezaji%20wa%20Website." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm"><i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo</a>
-        </div>
-      </div>
-      <!-- 7 -->
-      <div class="col-md-6 col-lg-4 reveal" data-category="web">
-        <div class="glass-card">
-          <div class="card-icon"><i class="bi bi-braces"></i></div>
-          <h3 class="card-title">Programming na Web Development</h3>
-          <p class="card-text">Lugha za programu na ujenzi wa application za kisasa za wavuti.</p>
-          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Programming%20na%20Web%20Development." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm"><i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo</a>
-        </div>
-      </div>
-      <!-- 8 -->
-      <div class="col-md-6 col-lg-4 reveal" data-category="it">
-        <div class="glass-card">
-          <div class="card-icon"><i class="bi bi-diagram-3"></i></div>
-          <h3 class="card-title">Computer Networking</h3>
-          <p class="card-text">Misingi ya mtandao, usanidi wa LAN, na usimamizi wa miundombinu.</p>
-          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Computer%20Networking." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm"><i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo</a>
-        </div>
-      </div>
-      <!-- 9 -->
+
+      <!-- IT 3 -->
       <div class="col-md-6 col-lg-4 reveal" data-category="it">
         <div class="glass-card">
           <div class="card-icon"><i class="bi bi-tools"></i></div>
           <h3 class="card-title">Matengenezo ya Kompyuta</h3>
           <p class="card-text">Ukarabati wa laptop na desktop — hardware na software.</p>
-          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Matengenezo%20ya%20Kompyuta." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm"><i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo</a>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Matengenezo%20ya%20Kompyuta." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
         </div>
       </div>
-      <!-- 10 -->
-      <div class="col-md-6 col-lg-4 reveal" data-category="creative">
+
+      <!-- IT 4 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="it">
         <div class="glass-card">
-          <div class="card-icon"><i class="bi bi-megaphone"></i></div>
-          <h3 class="card-title">Digital Marketing</h3>
-          <p class="card-text">Kukuza biashara mtandaoni kwa mitandao ya kijamii na mikakati ya kidijitali.</p>
-          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Digital%20Marketing." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm"><i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo</a>
+          <div class="card-icon"><i class="bi bi-windows"></i></div>
+          <h3 class="card-title">Usakinishaji wa Windows</h3>
+          <p class="card-text">Kufunga, kusasisha na kusanidi Windows pamoja na drivers muhimu.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Usakinishaji%20wa%20Windows." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
         </div>
       </div>
-      <!-- 11 -->
+
+      <!-- IT 5 -->
       <div class="col-md-6 col-lg-4 reveal" data-category="it">
         <div class="glass-card">
           <div class="card-icon"><i class="bi bi-robot"></i></div>
           <h3 class="card-title">Matumizi ya Zana za AI</h3>
           <p class="card-text">Kutumia zana za AI kuboresha kazi, ubunifu na uzalishaji wa maudhui.</p>
-          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Matumizi%20ya%20Zana%20za%20AI." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm"><i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo</a>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Matumizi%20ya%20Zana%20za%20AI." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
         </div>
       </div>
-      <!-- 12 -->
+
+      <!-- IT 6 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="it">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-printer"></i></div>
+          <h3 class="card-title">Matengenezo ya Printer</h3>
+          <p class="card-text">Kufunga, kusanidi na kutengeneza printer za aina mbalimbali.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Matengenezo%20ya%20Printer." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- ============================================
+           KUNDI 2: WEB & PROGRAMMING
+           ============================================ -->
+
+      <!-- WEB 1 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="web">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-code-slash"></i></div>
+          <h3 class="card-title">Utengenezaji wa Website</h3>
+          <p class="card-text">Kujenga website za kisasa kwa HTML, CSS, JavaScript na Bootstrap.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Utengenezaji%20wa%20Website." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- WEB 2 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="web">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-braces"></i></div>
+          <h3 class="card-title">Programming na Web Development</h3>
+          <p class="card-text">Lugha za programu na ujenzi wa application za kisasa za wavuti.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Programming%20na%20Web%20Development." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- WEB 3 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="web">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-filetype-html"></i></div>
+          <h3 class="card-title">HTML, CSS na Bootstrap</h3>
+          <p class="card-text">Misingi ya kujenga kurasa za wavuti zenye muonekano wa kisasa.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20HTML%2C%20CSS%20na%20Bootstrap." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- WEB 4 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="web">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-filetype-js"></i></div>
+          <h3 class="card-title">JavaScript Programming</h3>
+          <p class="card-text">Lugha ya JavaScript kwa ujenzi wa website zenye mwingiliano.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20JavaScript%20Programming." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- WEB 5 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="web">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-wordpress"></i></div>
+          <h3 class="card-title">WordPress na CMS</h3>
+          <p class="card-text">Kujenga na kusimamia website kwa WordPress na mifumo mingine ya CMS.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20WordPress%20na%20CMS." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- WEB 6 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="web">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-cloud-upload"></i></div>
+          <h3 class="card-title">Domain na Web Hosting</h3>
+          <p class="card-text">Usajili wa domain, hosting na kuweka website yako mtandaoni.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Domain%20na%20Web%20Hosting." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- ============================================
+           KUNDI 3: UBUNIFU & DIGITAL
+           ============================================ -->
+
+      <!-- CREATIVE 1 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="creative">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-palette"></i></div>
+          <h3 class="card-title">Graphics Design</h3>
+          <p class="card-text">Ubunifu wa logo, mabango, vipeperushi na maudhui ya kuvutia kwa biashara.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Graphics%20Design." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- CREATIVE 2 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="creative">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-brush"></i></div>
+          <h3 class="card-title">Logo na Brand Identity</h3>
+          <p class="card-text">Kubuni logo na kujenga utambulisho wa kipekee wa biashara yako.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Logo%20na%20Brand%20Identity." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- CREATIVE 3 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="creative">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-camera-reels"></i></div>
+          <h3 class="card-title">Video Editing</h3>
+          <p class="card-text">Kuhariri video kwa kutumia zana za kisasa kwa matangazo na mitandao.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Video%20Editing." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- CREATIVE 4 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="creative">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-megaphone"></i></div>
+          <h3 class="card-title">Digital Marketing</h3>
+          <p class="card-text">Kukuza biashara mtandaoni kwa mitandao ya kijamii na mikakati ya kidijitali.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Digital%20Marketing." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- CREATIVE 5 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="creative">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-phone"></i></div>
+          <h3 class="card-title">Social Media Management</h3>
+          <p class="card-text">Kusimamia kurasa za biashara kwenye mitandao ya kijamii kwa ufanisi.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Social%20Media%20Management." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- CREATIVE 6 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="creative">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-camera"></i></div>
+          <h3 class="card-title">Photography Basics</h3>
+          <p class="card-text">Misingi ya upigaji picha kwa matangazo, matukio na biashara.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Photography%20Basics." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- ============================================
+           KUNDI 4: UFUNDI
+           ============================================ -->
+
+      <!-- TECHNICAL 1 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="technical">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-fire"></i></div>
+          <h3 class="card-title">Ulehemu (Welding)</h3>
+          <p class="card-text">Ujuzi wa kulehemu kwa vitendo — kutoka misingi hadi ufundi wa hali ya juu.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Ulehemu%20(Welding)." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- TECHNICAL 2 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="technical">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-bounding-box"></i></div>
+          <h3 class="card-title">Ufundi wa Aluminium</h3>
+          <p class="card-text">Kutengeneza na kufunga milango, madirisha na miundo ya aluminium.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Ufundi%20wa%20Aluminium." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- TECHNICAL 3 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="technical">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-lightning-charge"></i></div>
+          <h3 class="card-title">Umeme wa Nyumbani</h3>
+          <p class="card-text">Ufungaji na matengenezo ya mifumo ya umeme kwa nyumba na biashara.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Umeme%20wa%20Nyumbani." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- TECHNICAL 4 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="technical">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-hammer"></i></div>
+          <h3 class="card-title">Uashi wa Mageti na Grill</h3>
+          <p class="card-text">Kutengeneza mageti, grill na miundo mbalimbali ya chuma.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Uashi%20wa%20Mageti%20na%20Grill." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- TECHNICAL 5 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="technical">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-tools"></i></div>
+          <h3 class="card-title">Ukarabati wa Vyombo vya Nyumbani</h3>
+          <p class="card-text">Kutengeneza vifaa vidogo vya umeme na nyumbani.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Ukarabati%20wa%20Vyombo%20vya%20Nyumbani." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- TECHNICAL 6 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="technical">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-sun"></i></div>
+          <h3 class="card-title">Usakinishaji wa Sola</h3>
+          <p class="card-text">Misingi ya kufunga mifumo ya sola kwa nyumba na biashara.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Usakinishaji%20wa%20Sola." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- ============================================
+           KUNDI 5: USALAMA
+           ============================================ -->
+
+      <!-- SECURITY 1 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="security">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-camera-video"></i></div>
+          <h3 class="card-title">Usakinishaji wa CCTV Camera</h3>
+          <p class="card-text">Kusakinisha, kusanidi na kudumisha mifumo ya CCTV kwa nyumba na biashara.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Usakinishaji%20wa%20CCTV." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- SECURITY 2 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="security">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-hdd-network"></i></div>
+          <h3 class="card-title">DVR na NVR Setup</h3>
+          <p class="card-text">Kufunga na kusanidi vifaa vya kurekodi video za CCTV.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20DVR%20na%20NVR%20Setup." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- SECURITY 3 -->
       <div class="col-md-6 col-lg-4 reveal" data-category="security">
         <div class="glass-card">
           <div class="card-icon"><i class="bi bi-shield-lock"></i></div>
-          <h3 class="card-title">Usalama wa Mtandao na Cybersecurity</h3>
+          <h3 class="card-title">Usalama wa Mtandao</h3>
           <p class="card-text">Misingi ya usalama wa mtandao na ulinzi wa taarifa za kidijitali.</p>
-          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Usalama%20wa%20Mtandao%20na%20Cybersecurity." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm"><i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo</a>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Usalama%20wa%20Mtandao." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
         </div>
       </div>
+
+      <!-- SECURITY 4 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="security">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-shield-check"></i></div>
+          <h3 class="card-title">Cybersecurity Fundamentals</h3>
+          <p class="card-text">Misingi ya ulinzi wa mifumo, taarifa na mitandao dhidi ya vitisho.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Cybersecurity%20Fundamentals." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- SECURITY 5 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="security">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-person-badge"></i></div>
+          <h3 class="card-title">Access Control Systems</h3>
+          <p class="card-text">Kufunga na kusanidi mifumo ya kudhibiti watu wanaoingia.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Access%20Control%20Systems." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- SECURITY 6 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="security">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-fingerprint"></i></div>
+          <h3 class="card-title">Biometric Systems</h3>
+          <p class="card-text">Misingi ya mifumo ya kidijitali ya kutambua watu kwa vidole na uso.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Biometric%20Systems." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- ============================================
+           KUNDI 6: NETWORKING
+           ============================================ -->
+
+      <!-- NETWORKING 1 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="it">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-diagram-3"></i></div>
+          <h3 class="card-title">Computer Networking</h3>
+          <p class="card-text">Misingi ya mtandao, usanidi wa LAN na usimamizi wa miundombinu.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Computer%20Networking." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- NETWORKING 2 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="it">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-wifi"></i></div>
+          <h3 class="card-title">Router na Wi-Fi Setup</h3>
+          <p class="card-text">Kusanidi router, Wi-Fi na kuboresha mawasiliano ya mtandao.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Router%20na%20Wi-Fi%20Setup." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- NETWORKING 3 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="it">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-ethernet"></i></div>
+          <h3 class="card-title">LAN Cable Installation</h3>
+          <p class="card-text">Kuvuta nyaya za mtandao na kusanidi miundombinu ya LAN.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20LAN%20Cable%20Installation." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- NETWORKING 4 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="it">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-broadcast"></i></div>
+          <h3 class="card-title">Access Point Setup</h3>
+          <p class="card-text">Kufunga na kusanidi vifaa vya Wi-Fi kwa maeneo makubwa.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Access%20Point%20Setup." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- NETWORKING 5 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="it">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-wrench-adjustable"></i></div>
+          <h3 class="card-title">Network Troubleshooting</h3>
+          <p class="card-text">Kutatua hitilafu za mtandao na kuboresha kasi ya mawasiliano.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Network%20Troubleshooting." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
+      <!-- NETWORKING 6 -->
+      <div class="col-md-6 col-lg-4 reveal" data-category="it">
+        <div class="glass-card">
+          <div class="card-icon"><i class="bi bi-building"></i></div>
+          <h3 class="card-title">Small Office IT Support</h3>
+          <p class="card-text">Msaada wa IT kwa ofisi, maduka na taasisi ndogo.</p>
+          <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20nahitaji%20kujua%20zaidi%20kuhusu%20mafunzo%20ya%20Small%20Office%20IT%20Support." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+            <i class="bi bi-whatsapp me-1"></i> Uliza Kuhusu Mafunzo
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
+<!-- ============ CTA ============ -->
 <section class="section">
   <div class="container">
     <div class="cta-banner reveal">
       <h2 class="mb-3">Hujapata unachokitafuta?</h2>
-      <p class="mb-4">Wasiliana nasi kujua zaidi kuhusu mafunzo yetu na jinsi ya kujiunga.</p>
-      <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20ningependa%20kujua%20zaidi%20kuhusu%20mafunzo%20yenu." target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="bi bi-whatsapp me-2"></i>Wasiliana nasi kwa WhatsApp</a>
+      <p class="mb-4" style="max-width: 560px; margin-inline: auto;">
+        Wasiliana nasi kujua zaidi kuhusu mafunzo yetu na jinsi ya kujiunga.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="https://wa.me/255654405432?text=Habari%20DTECH%2C%20ningependa%20kujua%20zaidi%20kuhusu%20mafunzo%20yenu." target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <i class="bi bi-whatsapp me-2"></i>WhatsApp
+        </a>
+        <a href="wasiliana.html" class="btn btn-gradient">
+          <i class="bi bi-chat-dots me-2"></i>Wasiliana Nasi
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- ============ FOOTER ============ -->
 <footer class="dtech-footer">
   <div class="container">
     <div class="row g-4">
+
       <div class="col-lg-4">
-        <a class="navbar-brand" href="index.html"><span class="brand-logo"><i class="bi bi-cpu"></i></span><span class="brand-text">DTECH</span></a>
-        <p class="mt-3" style="max-width:340px;">Teknolojia, Ujuzi na Ubunifu kwa Maendeleo.</p>
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-logo"><i class="bi bi-cpu"></i></span>
+          <span class="brand-text">DTECH COLLEGE</span>
+        </a>
+        <p class="mt-3" style="max-width: 340px;">
+          Teknolojia, Ujuzi na Ubunifu kwa Maendeleo. Tunatoa mafunzo ya ufundi,
+          huduma za teknolojia na suluhisho za kidijitali Tanzania.
+        </p>
         <div class="social-links">
           <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
@@ -188,6 +578,7 @@
           <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
+
       <div class="col-6 col-lg-2">
         <h6>Kurasa</h6>
         <ul>
@@ -197,31 +588,40 @@
           <li><a href="maswali.html">Maswali</a></li>
         </ul>
       </div>
+
       <div class="col-6 col-lg-3">
         <h6>Huduma & Mafunzo</h6>
         <ul>
           <li><a href="mafunzo.html">Mafunzo Yote</a></li>
           <li><a href="huduma.html">Huduma Zote</a></li>
+          <li><a href="huduma.html">Ukarabati wa Simu</a></li>
+          <li><a href="huduma.html">Ujenzi wa Website</a></li>
         </ul>
       </div>
+
       <div class="col-lg-3">
         <h6>Wasiliana</h6>
         <ul>
           <li><a href="tel:+255654405432"><i class="bi bi-telephone me-2"></i>+255 654 405 432</a></li>
+          <li><a href="tel:+255752887484"><i class="bi bi-telephone me-2"></i>+255 752 887 484</a></li>
           <li><a href="mailto:massghelp@gmail.com"><i class="bi bi-envelope me-2"></i>massghelp@gmail.com</a></li>
           <li><a href="https://wa.me/255654405432" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a></li>
         </ul>
       </div>
+
     </div>
+
     <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
       <span>© 2026 DTECH. Haki zote zimehifadhiwa.</span>
-      <span>Imeundwa na<i class="bi bi-heart-fill" style="color:#22d3ee;"></i> Jax Technologies</span>
+      <span>Imeundwa na <i class="bi bi-heart-fill" style="color:#22d3ee;"></i> Jax Technologies</span>
     </div>
   </div>
 </footer>
 
+<!-- Back to top -->
 <button class="back-to-top" id="backToTop" aria-label="Rudi juu"><i class="bi bi-arrow-up"></i></button>
 
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
